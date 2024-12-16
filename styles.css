@@ -1,65 +1,106 @@
-/*  your css code here. If applicable */
-*{
-	margin:0;
-	padding:0;
-	box-sizing:border-box
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* Body Styling */
+body {
+    background-color: #f6f6f6; /* Light background color */
+    font-family: Arial, sans-serif;
+    display: flex; /* Use flexbox for center alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full height of viewport */
+}
+
+/* Container: Holds both left and right sections */
 .container {
-    display: flex;
+    display: flex; /* Align left and right sections side by side */
+    justify-content: space-between;
+    align-items: center;
     width: 900px;
     max-width: 100%;
-    align-items: center;
-    justify-content: center;
 }
 
-body{
-	background-color: #f6f6f6;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	
+/* Left Section: Facebook Logo and Description */
+.left {
+    width: 450px;
+    margin-top: 70px;
+    text-align: center;
 }
 
-.left{
-	width: 450px;
-	margin-top: 70px;
-	display: inline-block;
-	
-}
-form{
-	display: flex;
-	width:300px;
-	background-color: white;
-	padding: 20px;
-	border-radius: 5px;
-	box-shadow: 0 0  10px #ccc;
-	flex-direction:column;
-	gap:10px
-	
+.left img {
+    margin-bottom: 20px;
 }
 
-input{
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	padding: 10px
-}
-button{
-	background-color: #1877f2;
-	border-radius: 5px;
-	padding:10px 20px;
-	width: 100%.
-}
-a{
-	text-decoration:none;
-	color: #1877f2
-}
-.signup{
-	background-color:  #42b72a
+.left p {
+    font-size: 18px;
+    color: #606770;
 }
 
+/* Right Section: Login Form */
+.right {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
 
+button {
+    background-color: #1877f2; /* Facebook blue color */
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100%; /* Full width */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 
+button:hover {
+    background-color: #165eaa; /* Darker blue on hover */
+}
 
+a {
+    color: #1877f2; /* Link color */
+    text-decoration: none; /* Remove underline */
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Signup Button (Create new account) */
+.signup {
+    background-color: #42b72a; /* Green button */
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100%;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.signup:hover {
+    background-color: #36a420; /* Darker green on hover */
+}
